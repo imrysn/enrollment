@@ -1,8 +1,13 @@
 import logo from './logo.svg';
 import './App.css';
+import Header from './components/Header';
+import LoginPage from './components/LoginPage'
 
 function App() {
   return (
+    <>
+    <Header />
+    <LoginPage />
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
@@ -19,6 +24,7 @@ function App() {
         </a>
       </header>
     </div>
+    </>
   );
 }
 
