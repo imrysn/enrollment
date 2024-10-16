@@ -1,25 +1,28 @@
-import React, { useState } from 'react';
-import './LoginPage.css'; // For additional styling
+import React, { useState } from "react";
+import "../components/Login.css"; // For additional styling
 
 const LoginPage = () => {
   // Toggle between "Log in" and "Password Reset"
   const [isLogin, setIsLogin] = useState(true);
 
   return (
-    <div className="login-container" style={{ backgroundImage: 'url(https://your-image-url.com)' }}>
+    <div
+      className="login-container"
+      style={{ backgroundImage: "url(https://your-image-url.com)" }}
+    >
       <div className="login-box">
         <div className="toggle-buttons">
           {/* Toggle button for switching between Log In and Password Reset */}
-          <button 
-            type="button" 
-            className={isLogin ? 'active' : ''} 
+          <button
+            type="button"
+            className={isLogin ? "active" : ""}
             onClick={() => setIsLogin(true)}
           >
             Log in
           </button>
-          <button 
-            type="button" 
-            className={!isLogin ? 'active' : ''} 
+          <button
+            type="button"
+            className={!isLogin ? "active" : ""}
             onClick={() => setIsLogin(false)}
           >
             Password Reset
